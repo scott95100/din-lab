@@ -14,7 +14,7 @@ function App() {
       <h1>{post.title}</h1>
       <h2>by {post.author}</h2>
       <h2><b>Comments:</b></h2>
-      <p>{post.comments[0]}</p>
+      <p>{post.comments[Math.floor(Math.random() * post.comments.length)]}</p>
 
     </div>
   );
